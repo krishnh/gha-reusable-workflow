@@ -1,0 +1,9 @@
+name: reusable-work-flows
+on:
+  workflow_call:
+jobs:
+  greetings:
+    runs-on: ubuntu-latest
+    steps:
+     - name: greeting steps
+       run: echo "Welcome how to use reusable worflows"

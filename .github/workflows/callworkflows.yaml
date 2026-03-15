@@ -1,0 +1,6 @@
+name: reusable-work-flows
+on:
+  workflow_call:
+jobs:
+  call-greetings:
+    uses: ./.github/workflows/reusable.yaml
