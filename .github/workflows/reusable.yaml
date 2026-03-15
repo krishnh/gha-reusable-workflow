@@ -1,9 +1,21 @@
 name: reusable-work-flows
 on:
   workflow_call:
+    inputs:
+      fname:
+        description: your name
+        type: string
+        required: true
+        default: HK
+      sname:
+        description: your last name
+        type: string
+        required: true
+        default: ''
+
 jobs:
   greetings:
     runs-on: ubuntu-latest
     steps:
      - name: greeting steps
-       run: echo "Welcome how to use reusable worflows"
+       run: echo "Welcome ${{inputs.fname }} how to use reusable worflows"
