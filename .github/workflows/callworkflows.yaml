@@ -6,3 +6,6 @@ on:
 jobs:
   call-greetings:
     uses: ./.github/workflows/reusable.yaml
+    with:
+     fname: "Hemant"
+     sname: "krishnatrey"
